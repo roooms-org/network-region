@@ -33,6 +33,6 @@ output "vpc_id" {
 }
 
 output "public_subnets" {
-  description = "Public Subnet IDs"
-  value       = "${module.vpc.public_subnets}"
+  description = "Public Subnet ID"
+  value       = "${module.vpc.public_subnets[0]}"
 }
